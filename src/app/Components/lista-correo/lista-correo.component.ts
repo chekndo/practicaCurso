@@ -10,21 +10,21 @@ export class ListaCorreoComponent implements OnInit {
   correos: any[];
 
   constructor() {
-    const correo1 ={
+    const correo1 = {
       titulo:"Correo 1",
       cuerpo: 'Cuerpo correo 1',
       emisor: 'mckndo@gmail.com',
       destinatario: 'mckndo@gmail.com',
       leido: true,
     };
-    const correo2 ={
+    const correo2 = {
       titulo:"Correo 2",
       cuerpo: 'Cuerpo correo 2',
       emisor: 'mckndo@gmail.com',
       destinatario: 'mckndo@gmail.com',
       leido: true,
     };
-    const correo3 ={
+    const correo3 = {
       titulo:"Correo 3",
       cuerpo: 'Cuerpo correo 3',
       emisor: 'mckndo@gmail.com',
