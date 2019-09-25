@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaCorreoComponent } from './Components/lista-correo/lista-correo.component';
 import { FormsModule } from '@angular/forms';
+import { CorreoNuevoComponent } from './Components/correo-nuevo/correo-nuevo.component';
+import { CorreoComponent } from './Components/correo/correo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaCorreoComponent
+    ListaCorreoComponent,
+    CorreoNuevoComponent,
+    CorreoComponent
   ],
   imports: [
     BrowserModule,
