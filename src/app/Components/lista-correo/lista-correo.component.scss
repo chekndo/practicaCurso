@@ -1,0 +1,37 @@
+table {
+    width: 100%;
+    border: 3px solid black;
+    border-collapse: collapse
+    }
+th {
+    border: 2px solid black;
+    text-align: center;
+    background:#00BFFF ;
+    }
+tr {
+    border: 1px solid grey;
+    text-align: center;
+    background-color: #EFF8FB;
+    }
+tr:nth-child(even) {
+    border: 1px solid grey;
+    text-align: center;
+    background-color: #CEE3F6;
+    }
+td {
+    border: 1px solid grey;
+    }
+.td1 {
+    border: 1px solid grey;
+    text-align: center;
+    background-color: #EFF8FB;
+    }
+.td2 {
+    border: 1px solid grey;
+    text-align: center;
+    background-color: #CEE3F6;
+    }
+h1{
+    text-align: center;
+    color: #08088A
+}

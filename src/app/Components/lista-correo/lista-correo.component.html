@@ -1,24 +1,31 @@
-<table style="width: 100%; border: 1px solid black;">
+<h1>LISTA DE CORREOS</h1>
+<table>
     <tr>
         <th>Estado</th>
         <th>Emisor</th>
         <th>Titulo</th>
     </tr>
-    <tr>
-        <td>{{correos[0].titulo}}</td>
-    </tr>
-    <tr>
-        <td>{{correos[0].titulo}}</td>
-    </tr>
-    <tr>
-        <td>{{correos[0].titulo}}</td>
-    </tr>
-    <tr *ngFor="let correo of correos">
+     <tr *ngFor="let correo of correos; index as i;">
         <td>
-            <div *ngIf="correo.leido">Si</div> 
-            <div *ngIf="!correo.leido">No</div> 
+            <div *ngIf="correo.leido">Enviado</div> 
+            <div *ngIf="!correo.leido">No enviado</div> 
         </td>
         <td>{{correo.emisor}}</td>
         <td>{{correo.titulo}}</td>
     </tr>
+
+    <!-- Mismo proceso pero con IF    
+    <td class="td1" *ngIf="i%2 == 0">
+        <div *ngIf="correo.leido">Enviado</div> 
+        <div *ngIf="!correo.leido">No enviado</div> 
+    </td>
+    <td class="td1" *ngIf="i%2 == 0">{{correo.emisor}}</td>
+    <td  class="td1" *ngIf="i%2 == 0">{{correo.titulo}}</td>
+
+    <td class="td2" *ngIf="i%2 > 0">
+        <div *ngIf="correo.leido">Enviado</div> 
+        <div *ngIf="!correo.leido">No enviado</div> 
+    </td>
+    <td class="td2" *ngIf="i%2 > 0">{{correo.emisor}}</td>
+    <td  class="td2" *ngIf="i%2 > 0">{{correo.titulo}}</td> -->
 </table>
