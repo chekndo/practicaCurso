@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CorreoComponent } from './correo.component';
+import { ListaCorreoComponent } from './lista-correo.component';
 
-describe('CorreoComponent', () => {
-  let component: CorreoComponent;
-  let fixture: ComponentFixture<CorreoComponent>;
+describe('ListaCorreoComponent', () => {
+  let component: ListaCorreoComponent;
+  let fixture: ComponentFixture<ListaCorreoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CorreoComponent ]
+      declarations: [ ListaCorreoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CorreoComponent);
+    fixture = TestBed.createComponent(ListaCorreoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
