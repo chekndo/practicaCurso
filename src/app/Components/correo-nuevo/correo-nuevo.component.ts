@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class CorreoNuevoComponent implements OnInit {
 
-  correoNuevo:FormGroup;
+  correoNuevo: FormGroup;
   enviado = false;
 
   constructor(private formBuilder: FormBuilder) {  }
