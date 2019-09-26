@@ -2,3 +2,21 @@ h1{
     text-align: center;
     color: #08088A
 }
+table {
+    width: 50%;
+    border: 3px solid black;
+    border-collapse: collapse
+    }
+th {
+    border: 2px solid black;
+    text-align: center;
+    background:#00BFFF ;
+    }
+tr {
+    border: 1px solid grey;
+    text-align: center;
+    background-color: #EFF8FB;
+    }
+td {
+    border: 1px solid grey;
+}
