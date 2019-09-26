@@ -1,44 +1,68 @@
 <h1>CORREO NUEVO</h1>
 
-<table>
-<tr>
-  <th>Correo a enviar</th>
-</tr>
-<tr><td>
 <form [formGroup]="correoNuevo" (ngSubmit)="onSubmit()">
-  <div>
-    <div>
-        <label>Asunto: &nbsp;&nbsp;</label>
-        <input type="text" formControlName="titulo" />
-        <div *ngIf="enviado && formulario.titulo.errors">
-          <div>El Asunto: &nbsp;&nbsp;</div>
-          <div *ngIf="formulario.titulo.errors.required">No puede estar vacio</div>
-          <div *ngIf="formulario.titulo.errors.minlength">Deber contener más de 3 carácteres</div>
-        </div>
-    </div>
-    <div>
-      <label>Cuerpo: &nbsp;&nbsp;</label>
-      <input type="text" formControlName="cuerpo" />
-      <div *ngIf="enviado && formulario.cuerpo.errors">
-        <div>El cuerpo </div>
-        <div *ngIf="formulario.cuerpo.errors.required">No puede estar vacio</div>
-        <div *ngIf="formulario.cuerpo.errors.minlength">Deber contener más de 10 carácteres</div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <label>Destinatario</label>
-    <input type="text" formControlName="destinatario" />
-    <div *ngIf="enviado && formulario.destinatario.errors">
-      <div *ngIf="formulario.destinatario.errors.required">El destinatario no puede estar vacio</div>
-      <div *ngIf="formulario.destinatario.errors.email">El destinatario debe ser un email válido</div>
-    </div>
-  </div>
-      
-  <div>
-    <button>Enviar</button>
-    <button type="reset" (click)="onReset()">Cancelar</button>
-  </div>
- </form>
-</td></tr>
-</table>
+	<table>
+		<tr>
+			<td  class="td1" >
+				<label>Asunto: &nbsp;&nbsp;</label>
+			</td>
+			<td>   
+				<input type="text" formControlName="titulo" />
+				
+			</td> 
+		</tr>
+		<tr>
+			<td class="td1">
+				<label>Cuerpo: &nbsp;&nbsp;</label>
+			</td>
+			<td>
+				<input type="text" formControlName="cuerpo" />
+			
+			</td>
+		</tr>
+	
+		<tr>
+			<td  class="td1">
+				<label>Destinatario:</label>
+			</td>
+			<td>
+				<input type="text" formControlName="destinatario" />
+				
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+			</td>
+			<td> 
+          <button class="boton1">Enviar</button>
+				<button class="boton2" type="reset" (click)="onReset()">Cancelar</button>
+			</td> 
+		</tr>
+	</table>
+</form>
+
+<div *ngIf="enviado && formulario.titulo.errors">
+    <div *ngIf="formulario.titulo.errors.required">El <b>Asunto</b> no puede estar vacio</div>
+    <div *ngIf="formulario.titulo.errors.minlength">El <b>Asunto</b> deber contener más de 3 carácteres</div>
+</div>
+
+<div *ngIf="enviado && formulario.cuerpo.errors">
+   <div *ngIf="formulario.cuerpo.errors.required"> El <b>Cuerpo</b> no puede estar vacio</div>
+    <div *ngIf="formulario.cuerpo.errors.minlength">El <b>Cuerpo</b> deber contener más de 10 carácteres</div>
+</div>
+
+<div *ngIf="enviado && formulario.destinatario.errors">
+    <div *ngIf="formulario.destinatario.errors.required">El <b>Destinatario</b> no puede estar vacio</div>
+    <div *ngIf="formulario.destinatario.errors.email">El <b>Destinatario</b> debe ser un email válido</div>
+</div>
+
+
+
+
+
+
+
+
+
